@@ -42,66 +42,73 @@ public class todo {
             
             choice = scanner.nextInt();
             scanner.nextLine(); // Clear the buffer
-            
+
+
             // Handle user choice
-            if (choice == 1) {
-                // Add task
-                System.out.print("Enter task: ");
-                String task = scanner.nextLine();
+            switch (choice) {
+                case 1 :
+                    // Add task
+                    System.out.print("Enter task: ");
+                    String task = scanner.nextLine();
 
-                try{
-                    FileWriter myfile = new FileWriter("src/todo.txt");
-                    myfile.write(task);
-                    myfile.close();
-                }catch (IOException e){
-                    System.out.println("error");
-                    e.printStackTrace();
-                }
-
-                tasks.add(task);
-                System.out.println("✓ Task added!");
-                
-            } else if (choice == 2) {
-                // View tasks
-                System.out.println("\n--- YOUR TASKS ---");
-                if (tasks.isEmpty()) {
-                    System.out.println("No tasks yet!");
-                } else {
-                    for (int i = 0; i < tasks.size(); i++) {
-                        System.out.println((i + 1) + ". " + tasks.get(i));
+                    try{
+                        FileWriter myfile = new FileWriter("src/todo.txt");
+                        myfile.write(task);
+                        myfile.close();
+                    }catch (IOException e){
+                        System.out.println("error");
+                        e.printStackTrace();
                     }
-                }
+
+                    tasks.add(task);
+                    System.out.println("✓ Task added!");
+                break;
                 
-            } else if (choice == 3) {
-                // Delete task
-                if (tasks.isEmpty()) {
-                    System.out.println("No tasks to delete!");
-                } else {
+                case 2:
+                    // View tasks
                     System.out.println("\n--- YOUR TASKS ---");
-                    for (int i = 0; i < tasks.size(); i++) {
-                        System.out.println((i + 1) + ". " + tasks.get(i));
-                    }
-                    System.out.print("Enter task number to delete: ");
-                    int num = scanner.nextInt();
-                    
-                    if (num >= 1 && num <= tasks.size()) {
-                        tasks.remove(num - 1);
-                        System.out.println("✓ Task deleted!");
+                    if (tasks.isEmpty()) {
+                        System.out.println("No tasks yet!");
                     } else {
-                        System.out.println("Invalid number!");
+                        for (int i = 0; i < tasks.size(); i++) {
+                            System.out.println((i + 1) + ". " + tasks.get(i));
+                        }
                     }
-                }
+                break;
                 
-            } else if (choice == 4) {
+                case 3:
+                    // Delete task
+                    if (tasks.isEmpty()) {
+                        System.out.println("No tasks to delete!");
+                    } else {
+                        System.out.println("\n--- YOUR TASKS ---");
+                        for (int i = 0; i < tasks.size(); i++) {
+                            System.out.println((i + 1) + ". " + tasks.get(i));
+                        }
+                        System.out.print("Enter task number to delete: ");
+                        int num = scanner.nextInt();
+
+                        if (num >= 1 && num <= tasks.size()) {
+                            tasks.remove(num - 1);
+                            System.out.println("✓ Task deleted!");
+                        } else {
+                            System.out.println("Invalid number!");
+                        }
+                    }
+                break;
+                
+                case 4:
                 // Exit
                 System.out.println("credit");
+                break;
                 
-            }
-            else if (choice == 5) {
+
+                case 5:
                 // Exit
                 System.out.println("\nGoodbye!");
+                break;
 
-            } else {
+                default:
                 // Invalid choice
                 System.out.println("Invalid choice! Try again.");
             }
