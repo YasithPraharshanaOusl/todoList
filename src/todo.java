@@ -7,7 +7,8 @@ public class todo {
     // Global variables
     static ArrayList<String> tasks = new ArrayList<>();
     static Scanner scanner = new Scanner(System.in);
-    
+
+
     public static void main(String[] args) {
     String icon = """
             ********************************************
