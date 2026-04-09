@@ -58,6 +58,32 @@ public class fileMananger extends ArrayList<dataStructure> {
     }
 
 
+    public static void deleteAllData() {
+        ArrayList<dataStructure> list = readData();       //  this method delete all task data and clear ArrayList
+        list.clear();
+
+        saveToFile(list);
+    }
+
+
+
+    public static void deleteDuetasks(String id){
+                                                        // this method delete all due status tasks
+        ArrayList<dataStructure> list = readData();
+
+        for (int i = 0; i < list.size(); i++) {
+            dataStructure currentItem = list.get(i);
+
+            if (currentItem.taskid.equals(id)) {
+                list.remove(i);
+                break;
+            }
+        }
+        saveToFile(list);
+
+    }
+
+
 
     public static String idGen(){
         //Auto generate the id (use : write() in main.java)
