@@ -48,17 +48,6 @@ It allows users to add, view, update, and delete tasks with date and time valida
 
 ## Example Menu
 
-
-====================================
-||          --- MENU ---          ||
-||        [1] Add Task            ||
-||        [2] View Tasks          ||
-||        [3] Update Tasks        ||
-||        [4] Delete Task         ||
-||        [5] Help                ||
-||        [6] Credits             ||
-||        [7] About               ||
-||        [8] Exit                ||
-====================================
+<img width="291" height="230" alt="todo_menu" src="https://github.com/user-attachments/assets/85fd9839-4bc9-4203-acf1-0621cbbb4ae9" />
 
 
