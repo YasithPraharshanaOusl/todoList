@@ -234,7 +234,7 @@ public class main {
                                     break;
 
                                 case 2:
-                                    System.out.println("Are you sure you want to delete all tasks? (y/n): ");         // confirm want to delete or not
+                                    System.out.println("Are you sure you want to delete all due tasks? (y/n): ");         // confirm want to delete or not
                                     String confimation_due = scanner.nextLine();
 
                                     for (int i = 0; i < tasks.size(); i++) {
