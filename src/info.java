@@ -4,9 +4,14 @@ public class info {
         String credit = "";
 
         credit = """
-                <Add Team Credit List>
-                EX: 
-                Yasith [admin]
+                ##### TEAM CREDITS #####
+                1.Yasith [Admin]
+                2.Hiruni [Project Developer]
+                3.Sachin [Project Developer]
+                4.Githma [Project Developer]
+                5.Chamaka [Project Testing & Consultor]
+                6.Sayani [Project Documentation Member]
+                7.Oshadini [Project Documentation Coordinator]
                 """;
 
         return credit;
@@ -21,7 +26,6 @@ public class info {
                 ex:
                 Choose [1] - can write the task
                 """;
-
         return Help;
     }
 
