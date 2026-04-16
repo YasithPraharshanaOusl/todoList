@@ -21,10 +21,13 @@ public class info {
         String Help = "";
 
         Help = """
-                ------ Help -------
-                <add help Menu>
-                ex:
-                Choose [1] - can write the task
+                ##### HELP MENU #####
+                (1) Write tasks - Describe the tasks what we have to do.
+                (2) View all tasks - Show the tasks what we have to do next.
+                (3) Add new tasks - Update the tasks which newly added.
+                (4) Delete tasks - Remove unnecessary tasks.
+                (5) Show finish tasks - View completed tasks.
+                < Add more options >
                 """;
         return Help;
     }
