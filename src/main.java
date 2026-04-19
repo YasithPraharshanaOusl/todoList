@@ -44,7 +44,7 @@ public class main {
 
         do {
 
-            System.out.println("[*]Choose (1-8): ");
+            System.out.print("[*]Choose (1-8): ");
             choice = scanner.nextInt();
             scanner.nextLine(); // Clear the buffer
 
