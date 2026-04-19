@@ -36,8 +36,12 @@ public class info {
         String About = "";
 
         About = """
-                ------ ABOUT -------
-                <add about of team & project>
+                 ###### ABOUT PROJECT ######
+                 This application was created by a team of 7 students as a mini project on the OUSL , Fundamentals of Programming course.
+                
+                 This is a mini project what we have to do in our courses. Such as Assignments, In class assignments, Presentations, Mini projects, day schools, Viva projects, Worksheets, Tutorials, Physical day schools, announcements and etc. And also we can use this application to know what we have to do in our courses. This ' To-do list application ' helps us to be aware of the tasks that need to be done for each course we are studying.
+                
+                 In addition, this applications allows you to be aware of all the tasks related to the subject area and complete them in a timely manner.It is an easy and user - friendly application.
                 """;
 
         return About;
